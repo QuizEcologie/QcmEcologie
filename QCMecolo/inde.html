@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Include Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app bg-white w-90 mx-auto mt-20 rounded-lg p-8">
+      <h1 class="font-bold text-3xl text-blue-900 border-b pb-3">
+        Simple Quiz
+      </h1>
+      <div class="quiz">
+        <h2 id="question" class="text-xl font-semibold text-blue-900 py-5">
+          Question goes here
+        </h2>
+        <div id="answer-buttons">
+          <button
+            class="btn bg-white text-gray-700 font-medium w-full border border-green-500 py-2 px-4 my-2 rounded-md cursor-pointer"
+          >
+            Answer 1
+          </button>
+          <button
+            class="btn bg-white text-gray-700 font-medium w-full border border-green-500 py-2 px-4 my-2 rounded-md cursor-pointer"
+          >
+            Answer 2
+          </button>
+          <button
+            class="btn bg-white text-gray-700 font-medium w-full border border-green-500 py-2 px-4 my-2 rounded-md cursor-pointer"
+          >
+            Answer 3
+          </button>
+          <button
+            class="btn bg-white text-gray-700 font-medium w-full border border-green-500 py-2 px-4 my-2 rounded-md cursor-pointer"
+          >
+            Answer 4
+          </button>
+        </div>
+        <button
+          id="next-btn"
+          class="bg-green-500 text-black font-medium w-32 py-2 mt-8 rounded-md hidden"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
